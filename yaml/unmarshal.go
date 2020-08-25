@@ -45,7 +45,7 @@ func decodeScalar(n *y3.Node) dgo.Value {
 	case `!!int`:
 		var x int64
 		_ = n.Decode(&x)
-		v = vf.Integer(x)
+		v = vf.Int64(x)
 	case `!!float`:
 		var x float64
 		_ = n.Decode(&x)
