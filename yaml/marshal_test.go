@@ -20,11 +20,11 @@ func TestMarshal(t *testing.T) {
 	require.Equal(t, `a: 1
 b: two
 c:
-    - hello
-    - true
-    - 1
-    - 3.14
-    - null
+  - hello
+  - true
+  - 1
+  - 3.14
+  - null
 `, string(b))
 }
 
